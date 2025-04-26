@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Atkinson Hyperlegible' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>UMSI Summer Resources</title>
+</head>
+<body>
+    <header>
+        <a class="skip" href="#main">Skip to Main content</a>
+        <nav>
+            <ul>
+                <li class="active"><a href = "index.html">Home</a></li>
+                <li><a href = "happening.html">What's Happening This Summer</a></li>
+                <li><a href = "academicscareer.html">Academics and Careers</a></li>
+                <li><a href ="annarbor.html">Ann Arbor Fun</a></li>
+            </ul>
+        </nav>
+        <h1>UMSI Summer Resources</h1>
+    </header>
+    <main id="main">
+        <section class="intro">
+            <div class="intro-text">
+                <h2>Welcome to the UMSI Summer Resources Hub</h2>
+                <p>Your comprehensive guide to being productive during the summer.</p>
+                <p>This guide is here to help you thrive as a UMSI grad student while making the most of summertime opportunities!</p>
+            </div>
+            <img src="images/summer.avif" alt="Man running from work office into the summer">
+        </section>
+        <!-- contact info -->
+        <section class="contact-section">
+            <h2>Get in Touch</h2>
+            <p>Want to learn more about career guidance and professional development? Contact the Career Development Office (CDO).</p>
+            <p>Want to learn more about events and engagement opportunities? Contact the Engaged Learning Office (ELO).</p>
+            <div class="button-group">
+                <button onclick="openForm('cdoForm')">Contact CDO</button>
+                <button onclick="openForm('eloForm')">Contact ELO</button>
+            </div>
+        </section>
+        <!-- CDO Form -->
+        <div id="cdoForm" class="popup-form">
+            <div class="form-content">
+              <span class="close" onclick="closeForm('cdoForm')">&times;</span>
+              <h3>Contact Career Development Office</h3>
+              <form onsubmit="sendEmail(event, 'umsi.careers@umich.edu')">
+                <label for="cdo-name">Your Name:</label>
+                <input type="text" id="cdo-name" name="name" required>
+        
+                <label for="cdo-email">Your Email:</label>
+                <input type="email" id="cdo-email" name="email" required>
+        
+                <label for="cdo-message">Your Message:</label>
+                <textarea id="cdo-message" name="message" required></textarea>
+        
+                <button type="submit">Send Message</button>
+              </form>
+            </div>
+          </div>
+
+        <!-- ELO Form -->
+        <div id="eloForm" class="popup-form">
+            <div class="form-content">
+              <span class="close" onclick="closeForm('eloForm')">&times;</span>
+              <h3>Contact Engaged Learning Office</h3>
+              <form onsubmit="sendEmail(event, 'umsi.engagement@umich.edu')">
+                <label for="elo-name">Your Name:</label>
+                <input type="text" id="elo-name" name="name" required>
+          
+                <label for="elo-email">Your Email:</label>
+                <input type="email" id="elo-email" name="email" required>
+          
+                <label for="elo-message">Your Message:</label>
+                <textarea id="elo-message" name="message" required></textarea>
+          
+                <button type="submit">Send Message</button>
+              </form>
+            </div>
+          </div>
+    </main>
+    <script src="js/forms.js"></script>
+</body>
+<footer>
+    <p>© Copyrights <span id="year"></span> by Molly Yang. All rights reserved.</p>
+        </footer>
+        <script>
+            const year = new Date().getFullYear();
+            document.getElementById("year").textContent = new Date().getFullYear();
+            </script>
+</html>

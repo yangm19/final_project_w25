@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Atkinson Hyperlegible' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Have Fun in Ann Arbor</title>
+</head>
+<body>
+    <header>
+        <a class="skip" href="#main">Skip to Main content</a>
+        <nav>
+            <ul>
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "happening.html">What's Happening This Summer</a></li>
+                <li><a href = "academicscareer.html">Academics and Careers</a></li>
+                <li class="active"><a href ="annarbor.html">Ann Arbor Fun</a></li>
+            </ul>
+        </nav>
+        <h1>Have Fun in Ann Arbor</h1>
+    </header>
+
+<main id="main">
+<!-- descriptions taken from or paraphrased from the relevant UMich websites -->
+    <section>
+        <h2>Local Ann Arbor Fun</h2>
+    
+        <div class="event">
+            <div class="event-content">
+                <h3>Ann Arbor Art Fair</h3>
+                <p><strong>Dates:</strong> July 17–19, 2025</p>
+                <p><strong>Location:</strong> Downtown Ann Arbor</p>
+                <p>Experience the nation's largest juried art fair, featuring nearly 1,000 artists across three unique fairs: The Original Street Art Fair, The Guild’s Summer Art Fair, and the State Street District Art Fair. Enjoy live music, food vendors, and family-friendly activities throughout the event. <a href="https://www.theannarborartfair.com/" target="_blank">Explore the art fair</a></p>
+            </div>
+            <img src="images/artfair.jpg" alt="Ann Arbor Art Fair">
+        </div>
+    
+        <div class="event">
+            <div class="event-content">
+                <h3>Ann Arbor Summer Festival</h3>
+                <p><strong>Dates:</strong> June–July 2025</p>
+                <p><strong>Location:</strong> Various venues in Ann Arbor</p>
+                <p>Enjoy a month-long celebration of the arts with performances ranging from music and dance to comedy and theater. The festival features both indoor and outdoor events, including the popular Top of the Park series with free movies and live music. <a href="https://www.a2sf.org/" target="_blank">Explore the festival</a></p>
+            </div>
+            <img src="images/aasf.jpg" alt="Ann Arbor Summer Festival">
+        </div>
+    
+    </section>
+    
+    <section>
+        <h2>Things to Do On-Campus</h2>
+    
+        <div class="event">
+            <div class="event-content">
+                <h3>Nichols Arboretum & Peony Garden</h3>
+                <p><strong>Location:</strong> 1610 Washington Heights, Ann Arbor</p>
+                <p>Explore 128 acres of diverse landscapes, including the renowned Peony Garden, which boasts the largest collection of heirloom peonies in North America. The Arboretum offers scenic walking trails, river views, and seasonal blooms. <a href="https://mbgna.umich.edu/nichols-arboretum" target="_blank">Visit the Arboretum</a></p>
+            </div>
+            <img src="images/peony.jpg" alt="Nichols Arboretum">
+        </div>
+    
+        <div class="event">
+            <div class="event-content">
+                <h3>Matthaei Botanical Gardens</h3>
+                <p><strong>Location:</strong> 1800 N Dixboro Rd, Ann Arbor</p>
+                <p>Discover a variety of themed gardens, including the Great Lakes Garden and the Bonsai Collection. The Botanical Gardens also host seasonal events such as plant sales and educational programs. <a href="https://mbgna.umich.edu/matthaei-botanical-gardens" target="_blank">Explore the Gardens</a></p>
+            </div>
+            <img src="images/conservatory.jpg" alt="Matthaei Botanical Gardens">
+        </div>
+    
+        <div class="event">
+            <div class="event-content">
+                <h3>University of Michigan Museum of Art</h3>
+                <p><strong>Location:</strong> Nichols Arboretum</p>
+                <p>The U-M Museum of Art puts art and ideas at the center of campus and public life. Visit to explore experiences that enrich our understanding of one another, foster joy, and build a more just future. Engage in exhibitions, programs, research, and community partnerships unique to a campus art museum. <a href="https://umma.umich.edu/visit/" target="_blank">Visit the UMMA</a></p>
+            </div>
+            <img src="images/umma.jpg" alt="University of Michigan Museum of Art">
+        </div>
+    
+        <div class="event">
+            <div class="event-content">
+                <h3>Kelsey Museum of Archaeology</h3>
+                <p><strong>Location:</strong> 434 S State St, Ann Arbor</p>
+                <p>Explore over 100,000 artifacts from ancient civilizations at this museum located on the University of Michigan campus. The museum offers exhibits and educational programs for visitors of all ages. <a href="https://lsa.umich.edu/kelsey/about-us.html" target="_blank">Visit the Kelsey Museum</a></p>
+            </div>
+            <img src="images/kelsey.jpeg" alt="Kelsey Museum of Archaeology">
+        </div>
+    
+    </section>
+</main>
+</body>
+<footer>
+    <p>© Copyrights <span id="year"></span> by Molly Yang. All rights reserved.</p>
+        </footer>
+        <script>
+            const year = new Date().getFullYear();
+            document.getElementById("year").textContent = new Date().getFullYear();
+            </script>
+</html>

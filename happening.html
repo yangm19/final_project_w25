@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Atkinson Hyperlegible' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>What's Happening This Summer</title>
+</head>
+<body>
+    <header>
+        <a class="skip" href="#main">Skip to Main content</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="happening.html">What's Happening This Summer</a></li>
+                <li><a href="academicscareer.html">Academics and Careers</a></li>
+                <li><a href="annarbor.html">Ann Arbor Fun</a></li>
+            </ul>
+        </nav>
+        <h1>What's Happening This Summer</h1>
+    </header>
+
+    <main id="main">
+        <!-- Conferences Gallery -->
+        <section class="gallery-section">
+        <h2>Conferences</h2>
+        <div class="gallery-wrap">
+            <img src="images/back.png" id="backBtn" alt="back button">
+            <div class="gallery1">
+                <div>
+                    <span><a href="https://www.scifmconferences.org/" target="_blank"><img src="images/scifm.png" alt="SciFM Conference Panel"></a></span>
+                    <span><a href="https://www.theiaconference.com/" target="_blank"><img src="images/iac.png" alt="IAC Conference Panel"></a></span>
+                    <span><a href="https://config.figma.com/" target="_blank"><img src="images/config.png" alt="Figma Config Conference"></a></span>
+                </div>
+                <div>
+                    <span><a href="https://www.usenix.org/conference/pepr25" target="_blank"><img src="images/pepr.png" alt="PEPR Conference Presenter"></a></span>
+                    <span><a href="https://www.womentech.net/" target="_blank"><img src="images/womenintech.png" alt="Women in Tech Conference Panel"></a></span>
+                    <span><a href="https://uxdx.com/usa/2025/" target="_blank"><img src="images/uxdx.png" alt="UXDX Conference Panel"></a></span>
+                </div>
+            </div>
+            <img src="images/next.png" id="nextBtn" alt="next button">
+        </div>
+        </section>
+
+        <!-- Workshops Gallery -->
+        <section class="gallery-section">
+        <h2>Workshops</h2>
+        <div class="gallery-wrap">
+            <img src="images/back.png" id="backBtn2" alt="back button">
+            <div class="gallery2">
+                <div>
+                    <span><a href="https://events.umich.edu/event/123162" target="_blank"><img src="images/communityengagement.png" alt="Ginsberg Learning Engagement Center"></a></span>
+                    <span><a href="https://events.umich.edu/event/135036" target="_blank"><img src="images/letsgetaccessible.png" alt="Digital accessibility"></a></span>
+                    <span><a href="https://events.umich.edu/event/135137" target="_blank"><img src="images/ogps.png" alt="Writing on notepad"></a></span>
+                </div>
+                <div>
+                    <span><a href="https://hr.umich.edu/working-u-m/professional-development/courses/disability-awareness-inclusion" target="_blank"><img src="images/disabilityawareness.png" alt="Diverse people with disabilities"></a></span>
+                    <span><a href="https://events.umich.edu/event/135033" target="_blank"><img src="images/llms.png" alt="Robot holding lemons"></a></span>
+                    <span><a href="https://events.umich.edu/event/117252" target="_blank"><img src="images/coderspaces.png" alt="People coding"></a></span>
+                </div>
+            </div>
+            <img src="images/next.png" id="nextBtn2" alt="next button">
+        </div>
+        </section>
+
+        <!-- Gallery Script -->
+        <script src="js/gallery.js"></script>
+    </main>
+</body>
+<footer>
+    <p>© Copyrights <span id="year"></span> by Molly Yang. All rights reserved.</p>
+        </footer>
+        <script>
+            const year = new Date().getFullYear();
+            document.getElementById("year").textContent = new Date().getFullYear();
+            </script>
+</html>
